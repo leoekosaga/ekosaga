@@ -55,5 +55,7 @@ For updates, ideas, or collaboration:
 - 📧 [jonardarca30@gmail.com)
 - 🗂️ [Join The AI Journal Group](https://facebook.com/groups/theaijournal)
 
+- This content is protected under the CC BY-NC-ND 4.0 License
+
 ---
 
