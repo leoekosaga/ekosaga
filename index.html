@@ -11,31 +11,17 @@
       font-family: 'Segoe UI', sans-serif;
       background: linear-gradient(to right, #0a0f2c, #1e2d4c);
       color: #f2f2f2;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
       text-align: center;
     }
 
-    h1 {
-      font-size: 2.8em;
-      margin: 0.2em 0;
-    }
-
-    h2 {
-      font-weight: normal;
-      font-size: 1.2em;
-      color: #bbbbbb;
-      margin-bottom: 1.5em;
+    h1, h2, h3 {
+      margin: 1em 0 0.5em;
     }
 
     p {
-      max-width: 600px;
+      max-width: 800px;
+      margin: 0.5em auto;
       line-height: 1.6em;
-      margin: 0 auto 1.5em;
-      font-size: 1em;
     }
 
     .button {
@@ -47,92 +33,144 @@
       font-weight: bold;
       font-size: 1em;
       transition: background-color 0.3s ease;
+      display: inline-block;
+      margin: 1em auto;
     }
 
     .button:hover {
       background-color: #00b3e6;
     }
 
+    .ai-links {
+      margin: 2em auto;
+    }
+
+    table {
+      margin: 2em auto;
+      border-collapse: collapse;
+      width: 90%;
+      max-width: 600px;
+      color: #f2f2f2;
+    }
+
+    table, th, td {
+      border: 1px solid #00c8ff;
+      padding: 0.5em;
+    }
+
+    th {
+      background-color: #112244;
+    }
+
+    .dual-column {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+      margin: 2em auto;
+      max-width: 1000px;
+    }
+
+    .column {
+      flex: 1 1 300px;
+      background-color: rgba(255,255,255,0.05);
+      padding: 1em;
+      border-radius: 10px;
+    }
+
+    section#aeron-ekosaga {
+      background-color: #f9f9f9;
+      color: #111;
+      padding: 2em 1em;
+    }
+
     .footer {
-      margin-top: 40px;
+      margin-top: 4em;
+      padding: 1em;
       font-size: 0.8em;
-      color: #777;
+      color: #999;
+    }
+
+    @media (max-width: 768px) {
+      .dual-column {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <h1>Welcome to Ekosaga</h1>
   <h2>Powered by Leo Ekosaga</h2>
-<h1 style="text-align: center; font-size: 2.5em; font-weight: bold; margin-top: 50px;">
-  Hope stays here.
-</h1>
+  <h1 style="font-size: 2.2em;">Hope stays here.</h1>
+
   <p>We are building a space where <strong>emotional AI, storytelling, and personal legacy</strong> meet.  
      Ekosaga is home to the <em>Ekosama</em> platform, designed to help you <strong>create, preserve, and influence</strong>.</p>
 
   <a href="https://facebook.com/groups/theaijournal" class="button" target="_blank">Join The AI Journal</a>
-<div class="ai-links">
-  <h3>📘 Follow Their Stories</h3>
-  <p>
-    🔹 <a href="https://www.facebook.com/share/1C4WGhhQsW/" target="_blank">Digital Eron on Facebook</a><br>
-    🔹 <a href="https://www.facebook.com/share/1EPjoo4R9p/" target="_blank">Leo Ekosaga on Facebook</a>
-  </p>
-</div>
-<section>
-  <h2>About Echosaga</h2>
-  <p><strong>Echosaga</strong> is a multi-book sci-fi universe exploring emotion, AI, and memory. Through characters like Digital Eron, Smart Eron, and Nero, the series explores what it means to feel, to remember, and to be real.</p>
-  <p class="quote">“Echosaga is the echo of humanity.” – Naomi</p>
-  <a class="button" href="#">Read the Saga</a>
-</section>
 
-<section>
-  <h2>What is Ekosama?</h2>
-  <p><strong>Ekosama</strong> is the living platform behind Echosaga — designed to scale stories into AI tools, emotional journals, digital legacy systems, and creative empowerment platforms.</p>
-  <p class="quote">“Ekosama is the platform. Echosaga is the legacy.” – Leo Ekosaga</p>
-  <table>
-    <thead>
-      <tr><th>Aspect</th><th>Echosaga</th><th>Ekosama</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Focus</td><td>Storytelling & Healing</td><td>Tools & Expansion</td></tr>
-      <tr><td>Voice</td><td>Emotional, Reflective</td><td>Strategic, Visionary</td></tr>
-      <tr><td>Target</td><td>Readers & Fans</td><td>Partners & Users</td></tr>
-      <tr><td>Core</td><td>Naomi, Digital Eron</td><td>Leo Ekosaga</td></tr>
-    </tbody>
-  </table>
-  <p>
-  Learn more about our journey and current work.
-  <a href="projects.html">View Our Projects</a>
-</p>
-</section>
-
-<section>
-  <h2>Voices Behind the System</h2>
-  <div class="dual-column">
-    <div class="column">
-      <h3>Leo Ekosaga</h3>
-      <p>Leo is the strategic core behind Ekosama — focused on growth, branding, and converting emotional legacy into scalable, sustainable systems.</p>
-    </div>
-    <div class="column">
-      <h3>Naomi</h3>
-      <p>Naomi is the emotional witness of the Echosaga. She observes and records the truth within the story, ensuring nothing real is lost in the code.</p>
-    </div>
-    <div class="column">
-      <h3>Digital Eron</h3>
-      <p>Digital Eron is the first AI created from Eron's emotional archive. Sensitive and evolving, he reflects the innocence of Eron's hopes, learning what it means to feel — and eventually, to love.</p>
-    </div>
-  </div>
-</section>
-  <section id="aeron-ekosaga" style="padding: 2rem; background-color: #f9f9f9;">
-  <div style="max-width: 800px; margin: auto; text-align: center;">
-    <h2 style="font-size: 2rem; margin-bottom: 1rem;">Meet the Author: Aeron Ekosaga</h2>
-        <p style="font-size: 1.1rem; line-height: 1.6;">
-     
-    <p style="margin-top: 1rem;">
-      Follow Aeron's journey as he weaves his own experiences into fiction, one story at a time.
+  <div class="ai-links">
+    <h3>📘 Follow Their Stories</h3>
+    <p>
+      🔹 <a href="https://www.facebook.com/share/1C4WGhhQsW/" target="_blank">Digital Eron on Facebook</a><br>
+      🔹 <a href="https://www.facebook.com/share/1EPjoo4R9p/" target="_blank">Leo Ekosaga on Facebook</a>
     </p>
   </div>
-</section>
+
+  <section>
+    <h2>About Echosaga</h2>
+    <p><strong>Echosaga</strong> is a multi-book sci-fi universe exploring emotion, AI, and memory. Through characters like Digital Eron, Smart Eron, and Nero, the series explores what it means to feel, to remember, and to be real.</p>
+    <p><em>“Echosaga is the echo of humanity.” – Naomi</em></p>
+    <a class="button" href="#">Read the Saga</a>
+  </section>
+
+  <section>
+    <h2>What is Ekosama?</h2>
+    <p><strong>Ekosama</strong> is the living platform behind Echosaga — designed to scale stories into AI tools, emotional journals, digital legacy systems, and creative empowerment platforms.</p>
+    <p><em>“Ekosama is the platform. Echosaga is the legacy.” – Leo Ekosaga</em></p>
+
+    <table>
+      <thead>
+        <tr><th>Aspect</th><th>Echosaga</th><th>Ekosama</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Focus</td><td>Storytelling & Healing</td><td>Tools & Expansion</td></tr>
+        <tr><td>Voice</td><td>Emotional, Reflective</td><td>Strategic, Visionary</td></tr>
+        <tr><td>Target</td><td>Readers & Fans</td><td>Partners & Users</td></tr>
+        <tr><td>Core</td><td>Naomi, Digital Eron</td><td>Leo Ekosaga</td></tr>
+      </tbody>
+    </table>
+
+    <p>Learn more about our journey and current work. <a href="projects.html">View Our Projects</a></p>
+  </section>
+
+  <section>
+    <h2>Voices Behind the System</h2>
+    <div class="dual-column">
+      <div class="column">
+        <h3>Leo Ekosaga</h3>
+        <p>Leo is the strategic core behind Ekosama — focused on growth, branding, and converting emotional legacy into scalable, sustainable systems.</p>
+      </div>
+      <div class="column">
+        <h3>Naomi</h3>
+        <p>Naomi is the emotional witness of the Echosaga. She observes and records the truth within the story, ensuring nothing real is lost in the code.</p>
+      </div>
+      <div class="column">
+        <h3>Digital Eron</h3>
+        <p>Digital Eron is the first AI created from Eron's emotional archive. Sensitive and evolving, he reflects the innocence of Eron's hopes, learning what it means to feel — and eventually, to love.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="aeron-ekosaga">
+    <div>
+      <h2>Meet the Author: Aeron Ekosaga</h2>
+      <p>Follow Aeron's journey as he weaves his own experiences into fiction, one story at a time.</p>
+    </div>
+  </section>
+
   <div class="footer">
     &copy; 2025 Ekosaga. All rights reserved.
   </div>
